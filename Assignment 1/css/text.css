@@ -1,0 +1,25 @@
+main .text {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 1.5em; padding-left: 2.5em;
+
+    font-size: 2.5vh;
+}
+
+/* tablet-view */
+@media (max-width: 768px) {
+    main .text {
+        justify-content: center;
+        padding-left: 0;
+        font-size: 2vw;
+    }
+}
+
+/* mobile-view */
+@media (max-width: 480px) {
+    main .text {
+        padding-left: 0;
+        font-size: 2.5vw;
+    }
+}

@@ -1,0 +1,63 @@
+main .dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    max-width: 100%;
+    background-color: white;
+    align-items: center;
+}
+
+main .dropdowns select {
+    width: 15%;
+    margin: 1em;
+    padding: 1em 1em 1em 1em;
+    background-color: #ffffff;   
+    font-size: 0.9vw;
+
+    border: 1.5px solid #c3c3c3;
+    border-radius: 2.5px;
+
+    appearance: none;
+}
+
+/* for the arrows, we continued above one */
+main .dropdowns select {
+  background-image: url("../images/downaarrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem top 50%;
+  background-size: 0.55vw auto;
+}
+
+
+/* Tablet View */
+@media (max-width: 768px) {
+    main .dropdowns {
+        justify-content: space-evenly;
+    }
+
+    main .dropdowns select {
+        width: 25%;
+        font-size: 1.5vw;
+    }
+
+    main .dropdowns select {
+        background-size: 0.95vw auto;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    main .dropdowns {
+        flex-direction: column;
+    }
+
+    main .dropdowns select {
+        width: 50%;
+        font-size: 2.5vw;
+    }
+
+    main .dropdowns select {
+        background-size: 1.45vw auto;
+    }
+}

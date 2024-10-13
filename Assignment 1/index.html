@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/body.css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/dropdown.css">
+        <link rel="stylesheet" href="./css/panel.css">
+        <link rel="stylesheet" href="./css/text.css">
+        <link rel="stylesheet" href="./css/table.css">
+        <title>EAZYPAYOUTS</title>
+    </head>
+
+    <body>
+        <!-- NAVIGATION PANEL -->
+        <nav>
+            <img src="./images/logo.png" class="logo">
+            <img src="./images/logo_flat.png" class="logo_flat">
+            <img src="./images/hamburger.svg" class="hamburger" id="menu">
+            <img src="./images/cross.svg" class="cross" id="close-menu">
+            <div class="tabs" id="tabs">
+                <a class="actived"><img src="./images/load.svg">Loads</a>
+                <a class="deactived"><img src="./images/statement.svg">Statements</a>
+                <a><img src="./images/transaction.svg">Transactions</a>
+                <a class="logout"><img src="./images/logout.svg">Logout</a>
+            </div>
+            <script src="./scripts/togglemenu.js"></script>
+        </nav>
+
+
+        <main>
+            <script src="./scripts/accounts.js" type="module"></script>
+            <!-- DROPDOWN STRIP -->
+            <div class="dropdowns">
+                <script src="./scripts/load.js" type="module"></script>
+                <select class="company" name="company" id="company">
+                    <option value="none">Company Name</option>
+                </select>
+                <select class="account" name="account" id="account">
+                    <option value="none">Account Name</option>
+                </select>
+                <script src="./scripts/DOMplayer.js" type="module"></script>
+                <script src="./scripts/dropdown.js" type="text/javascript"></script>
+            </div>
+
+
+            <!-- BALANCE STRIP -->
+             <div class="panel">
+                <div class="box">
+                    <img src="./images/cash.png">
+                    <div class="box-text">
+                        <h1 style="color: rgb(0,0,92);">Available balance</h1>
+                        <h2 style="color: rgb(33, 150, 83);" id="balance">₹ 8,88,88,88,888</h2>
+                    </div>
+                </div>
+             </div>
+
+
+             <!-- TEXT STRIP -->
+              <div class="text">
+                <p>Latest Loads are displayed here</p>
+              </div>
+
+              
+              <!-- TABLE BANNER -->
+               <div class="table" id="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Credit</th>
+                                <th>A/C Balance</th>
+                                <th>UTR/RRN</th>
+                                <th>A/C No/ UPI</th>
+                                <th class="space"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="space"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+               </div>
+        </main>
+    </body>
+</html>

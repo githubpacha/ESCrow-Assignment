@@ -1,0 +1,61 @@
+main .table {
+    flex: 1;
+    padding: 5vh;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.space {
+    width: 30%;
+}
+
+tr {
+    border-bottom: 1px solid #757575;
+}
+
+tr th {
+    background-color: #F5f5f5;
+    text-align: left;
+
+}
+
+tr th, tr td {
+    border: none;
+    padding: 1.5vh;
+    height: 5vh;
+
+    font-size: 1vw;
+    vertical-align: middle;
+}
+
+/* tablet view */
+@media (max-width: 768px) {
+    main .table {
+        padding: 2.5vh;
+    }
+
+    .space {
+        width: 0;
+    }
+
+    tr th, tr td {
+        padding: 1vh;
+        height: 3.125vh;
+
+        font-size: 1.5625vw;
+    }
+}
+
+/* monile view */
+@media (max-width: 480px) {
+    tr th, tr td {
+        padding: 0.25vh;
+        height: 3.5vh;
+
+        font-size: 1.875vw;
+    }
+}
