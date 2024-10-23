@@ -30,4 +30,10 @@
 * Step 3: `node index.js`, to run the server
 * Step 4: Open [Localhost URL](http://127.0.0.1:8880)
 
-
+### Task 2
+* Add Kafka.
+* Kafka is used to manage real-time streams, which perfectly fits to the requirement of this assignment.
+* Both the kafka-producer (those who writes) and the kafka-consumer (those whi reads) is the user itself.
+* Mock stream data is generated in the server and put into client through socket.io
+* We have to add kafka functionality, just when the user tried to subscribe to a stock.
+* It will read the stock and adds it into a log file.
