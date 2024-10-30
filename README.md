@@ -41,7 +41,7 @@
 ### Instructions
 * In assignment folder, add `kafkajs` module by typing `npm install kafkajs`
 * Install Kafka
-* Extract Kafka .tar.gz zip files into C://Kafka
+* Extract Kafka **.tar.gz** zip files into `C://Kafka`
 * Open terminal in that folder, in purpose of startig kafka server
 * Add some a topic `stock-updates` witrh one available partition by typing `.\bin\windows\kafka-topics.bat --create --topic stock-updates --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1`
 * Check the topics by typing, `.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092`. `stock-updates` should be appeared.
